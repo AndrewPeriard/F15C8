@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Status" directorySegmentName="seg_0" id="CF492760-4FFD-D089-5400-525490908174">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-11-11 23:41:40 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<sourcePk>0406C6E0-7D24-C431-544A-C1713DB07F52</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A08F5CBA-25EA-A1C8-B466-05B205438006</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2FA5FBD2-13C2-E6AE-902B-A626EC8E5428</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="status_eff_date" id="CAE53818-4E32-A6B5-60B9-AA762ABB3024">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-11-11 23:41:57 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="entered_by" id="E2A24BFC-D8D6-A042-A826-E8F54CB18B95">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-11-11 23:42:10 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

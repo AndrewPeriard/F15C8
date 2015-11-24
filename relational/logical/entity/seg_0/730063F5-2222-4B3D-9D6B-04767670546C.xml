@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="730063F5-2222-4B3D-9D6B-04767670546C" name="F15C8_RFE_RTCode">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:40:06 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_rtc_id" id="823089BB-86A8-2C95-6924-3CE183792AE6">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:40:06 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>B67685F1-F0EC-FDE1-508E-0827C2F6F125</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_type" id="BC75CEF6-5862-2709-A495-F06544172294">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:40:06 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>06E64216-CAB7-0EA8-3173-27D8BD71E745</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="9DBD07AA-2E92-2D03-B536-E462E6AD9909">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:40:06 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>A12E49E2-71C2-FF78-8E6C-1760E7BFC0DB</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rtc_num" id="69A9B8E9-CE39-7314-BCC1-EB995E8DC639">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-11-12 00:44:10 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="16890375-4FFC-F92E-0615-6576E4278C85" name="F15.C8_RFE_Role_Type_Codes PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:40:06 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>823089BB-86A8-2C95-6924-3CE183792AE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

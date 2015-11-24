@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79333489-9E6C-CD53-65C6-D3070847DCAC" name="F15C8_Task">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:06:35 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="task_id" id="A503DEE5-59B5-E5B6-66D0-B9BE3BE7499E">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:07:30 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="03CBA228-DE4E-E618-786B-A2DECE338632">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:07:43 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_abbreviation" id="102238E0-E4E3-8696-88D0-1CE6FEAC51E6">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:07:59 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task_description" id="6B306273-49FE-5F23-5F5C-0BF946A87C6F">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:08:19 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="5A3F65B0-FB16-BE8C-EEE9-808270C1D1DE">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:09:09 UTC</createdTime>
+<generatorID>A9A0B0D2-B372-2649-9575-D55CF7C6E510</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>253359EB-EC4B-8925-1FD8-D47E4023C471</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="5E20F367-5699-0A44-8D7E-7BA72A65092C">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-22 21:11:42 UTC</createdTime>
+<generatorID>09FAB746-2017-E09F-ADED-E7D6B3017339</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>997C1142-E5F9-C4B7-3AD5-EE64D9947074</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E590D34D-3960-9C6E-ECA3-96240092897F" name="F15.C8_Task PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:07:41 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A503DEE5-59B5-E5B6-66D0-B9BE3BE7499E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

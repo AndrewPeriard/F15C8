@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ECCED440-0C7E-42FC-F7F8-C4C842A68BAD" name="F15C8_Comment">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:15:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="1E2EA4BB-E543-B3A4-58F9-D730857D2557">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:15:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>797E6D07-E6F5-EDBD-D59A-6F7767FB65FF</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment_entry_date" id="248F8C64-A346-5667-8E91-4FFB3F4A4D96">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:15:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>67FA07A3-6180-E234-9CA1-83C88EBE53B3</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="8797A49A-FE24-D24C-DBAB-D9A87DE73C70">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:15:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>B840998B-E27E-DAE1-18B8-6136249034C2</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="58E3D2E6-37F2-C4B5-F67A-734DD366FCAC">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-22 21:11:14 UTC</createdTime>
+<generatorID>F56D4C2D-CBF5-2B09-9280-533525033E39</generatorID>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>253359EB-EC4B-8925-1FD8-D47E4023C471</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="01F15929-5C95-483F-CE44-078D3EB37293">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-22 21:11:25 UTC</createdTime>
+<generatorID>1AE3229C-B128-FDF6-4277-1A42708FA45A</generatorID>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>997C1142-E5F9-C4B7-3AD5-EE64D9947074</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A062EBEF-6FEB-56E7-3162-5EA8C2FAE8DA" name="F15_Comment PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:15:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E2EA4BB-E543-B3A4-58F9-D730857D2557</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

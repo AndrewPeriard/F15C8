@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="129CFA76-E496-825D-7103-4787327CE027" name="F15C8_Document">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 22:01:53 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="7653E0E8-7C06-0F73-32AE-EC6EF74C9E81">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 22:02:07 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="3AB897E5-7908-D784-B677-BDD50A7AD37B">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 22:02:27 UTC</createdTime>
+<generatorID>12B7D8E4-DFCB-E374-62C7-DD189886096C</generatorID>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<referedAttribute>FCFC37E1-4A6B-A000-7ACB-BF8E7458FAF2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CE82CE1-967E-1D66-39D0-74D710B4F0BD" name="F15_Document PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 22:02:18 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7653E0E8-7C06-0F73-32AE-EC6EF74C9E81</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

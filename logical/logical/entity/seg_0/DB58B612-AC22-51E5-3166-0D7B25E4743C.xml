@@ -1,0 +1,210 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB58B612-AC22-51E5-3166-0D7B25E4743C" name="F15C8_Emp">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_id" id="253359EB-EC4B-8925-1FD8-D47E4023C471">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>726549CE-062F-0F9D-A84E-AA1A9BA3D063</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_status" id="0E0F5E58-CD7E-531D-6E4F-9268827ACACA">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>4C9D58B7-E3CC-054B-926E-115CFC47A097</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_name" id="6FB36207-F56A-8CAD-3CCE-71AD93DB6C14">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>4343CC2A-81EE-AB63-35AF-72D4FA3CEE56</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_email" id="18A3893A-7B5D-0A23-AE74-00F0F3A60A9E">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>899E0F71-8581-8919-3E7E-E96E0823B098</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_office" id="40CF95B7-7936-DF55-1C2B-20AE17A36DCD">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>4E9D5221-8062-FC51-A7D8-2C4BA47C3850</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_phone" id="6FC1B5AE-4BD0-28ED-BE50-DC0AF8CAEBA2">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>7819395C-8C76-2674-DE2B-53595A67F18C</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_eff_date" id="85725360-6FD3-5D3D-096F-95D59BACA75B">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>36C19497-FC30-4CD8-C094-B55431F21A9B</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="system_admin_flag" id="98FD052F-3FAB-0FF5-5AF8-AD3A1E41E2C2">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:34:04 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_director_flag" id="E6B29FB1-6E05-A82B-938B-E2D8DB2B8BF2">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:34:50 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="exec_director_flag" id="B2709274-53C9-E513-A750-3F98DE45E781">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:35:07 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="chairperson_flag" id="CD5389E5-AF95-8708-4FCF-71D7C972A1FE">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:35:24 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_id" id="37096A95-9990-4DE9-D1CB-702E0DBB6D76">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:37:29 UTC</createdTime>
+<generatorID>8DE1906B-FB61-82ED-D574-21270CAB9BF9</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>D60A09CD-0263-E833-13CF-7C7C4F9B9736</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_rtc_id" id="E29716D7-1CB5-3426-131F-C56AAD0810A1">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:11:45 UTC</createdTime>
+<generatorID>FC5C284A-E289-6AF3-8671-C01E49014E2E</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>823089BB-86A8-2C95-6924-3CE183792AE6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D787BC0B-9359-6655-1A66-821F1D99D424" name="F15_Employees PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:33:32 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>253359EB-EC4B-8925-1FD8-D47E4023C471</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

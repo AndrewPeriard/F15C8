@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CDE11FB4-9C4E-7BB6-317F-70A617DE1F3C" name="F15C8_RFE_RTCode">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 20:00:45 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_role_type_code_id" id="B67685F1-F0EC-FDE1-508E-0827C2F6F125">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 20:01:23 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_type" id="06E64216-CAB7-0EA8-3173-27D8BD71E745">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 20:02:25 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="A12E49E2-71C2-FF78-8E6C-1760E7BFC0DB">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 20:02:54 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23098948-43CD-5090-AA35-A2521ADD52EB" name="F15.C8_RFE_Role_Type_Codes PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 20:02:23 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>B67685F1-F0EC-FDE1-508E-0827C2F6F125</newElementsIDs>
+<usedAttributes>
+<attributeRef>B67685F1-F0EC-FDE1-508E-0827C2F6F125</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

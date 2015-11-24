@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Comment" directorySegmentName="seg_0" id="7E2C5CCE-C02D-1AE1-C1DB-6AF53FD8480D">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:20:02 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>399100C3-0432-0CF1-E47F-517FB60CBAAB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2FA5FBD2-13C2-E6AE-902B-A626EC8E5428</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="comment_entry_date" id="D61FB82E-FF69-7E53-9CC5-AD138ADC43BE">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:20:40 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="comments" id="EB5FD6C4-1265-0C7F-D413-F2D87FF0CF57">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:20:58 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA4A3AF1-25A2-669A-889D-541D72E802B5" name="F15.C8_Status_History">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 21:53:36 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_history_id" id="A5D70E9F-9620-F72A-28C3-9EC0A6D63EDE">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 21:53:57 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="131B648E-F0F7-4E3C-6001-BAE9DBE866FB">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 21:55:23 UTC</createdTime>
+<generatorID>745F2B05-9F43-B208-66AC-EF870E48774A</generatorID>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<referedAttribute>FCFC37E1-4A6B-A000-7ACB-BF8E7458FAF2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="C4F5227D-E95D-5C05-3764-3DD98D9D4A6B">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 21:55:48 UTC</createdTime>
+<generatorID>841F495D-B907-5E63-22C5-2F5489C6A91B</generatorID>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<referedAttribute>4614DBCF-D773-ABAC-8302-3032B3902412</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B10E7CA0-C9EB-AC54-49A7-CB88161E3D17" name="F15_Status_History PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-19 21:54:11 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A5D70E9F-9620-F72A-28C3-9EC0A6D63EDE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

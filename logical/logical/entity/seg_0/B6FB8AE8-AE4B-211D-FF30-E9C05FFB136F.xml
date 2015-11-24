@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B6FB8AE8-AE4B-211D-FF30-E9C05FFB136F" name="F15C8_RFE">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:59:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_id" id="997C1142-E5F9-C4B7-3AD5-EE64D9947074">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:59:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>FCFC37E1-4A6B-A000-7ACB-BF8E7458FAF2</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="explanation" id="96FA7349-138C-107A-96B5-A1A484B9265B">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:59:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>4DADE353-603F-9CD5-AB5F-AC988C535C9A</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="alt_protections" id="AA078998-2333-C4BC-E9F6-DEF0822FBE21">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:59:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>495BCA61-29F8-3CC2-F78F-9B924600C56E</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approval_review_date" id="8F8780DA-32CF-7E64-13D7-2BADFD699670">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:59:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<importedID>5ECE7624-3D3B-BD15-C825-721FB3CED796</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="03F76510-B081-A5E9-7532-C4076849104C">
+<createdBy>Andrew</createdBy>
+<createdTime>2015-11-18 20:22:44 UTC</createdTime>
+<generatorID>88841C3F-C749-B1C7-5E6C-8092D25D6D9D</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>5A107756-750A-3EA1-AAF1-0350C34268FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="E15AC2E0-ABE2-78CD-EB57-00E9E954FB39">
+<createdBy>Andrew</createdBy>
+<createdTime>2015-11-18 20:22:44 UTC</createdTime>
+<generatorID>FB869335-A681-3769-B988-DCB3F6054C68</generatorID>
+<ownerDesignName>logical</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>253359EB-EC4B-8925-1FD8-D47E4023C471</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5984F775-0104-4338-2695-E012EAFB45F9" name="F15_RFE PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 22:59:02 UTC</createdTime>
+<ownerDesignName>logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>997C1142-E5F9-C4B7-3AD5-EE64D9947074</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

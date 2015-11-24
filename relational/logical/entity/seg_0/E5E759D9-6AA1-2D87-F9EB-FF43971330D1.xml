@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5E759D9-6AA1-2D87-F9EB-FF43971330D1" name="F15C8_RFE_SC">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:33:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rfe_sc_id" id="D6627C32-40B6-96CC-857F-A653F74537B6">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:33:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>60A3415E-1470-E235-13A5-1A9A3987766E</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_status" id="999DA05B-5208-6B91-D4EF-851DA9F9808B">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:33:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>7F15EAAB-6D40-F67F-70C4-7E64BA2B1989</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="1D7428CD-D79A-75A5-3A46-9663A1346218">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:33:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<importedID>EDB8BF96-EEBE-5110-0481-AEBBE4C88D94</importedID>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stat_code_num" id="3B445634-EFBE-DDB3-753A-2A7EDFFBA003">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-11-12 00:43:43 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="FDE2456E-A28D-AADC-BFAE-BFE610803980">
+<createdBy>Andrew</createdBy>
+<createdTime>2015-11-18 20:22:44 UTC</createdTime>
+<generatorID>5A1F3A06-BC5B-2D58-ED25-3B2A38E3C923</generatorID>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<referedAttribute>5A107756-750A-3EA1-AAF1-0350C34268FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D16E766F-84EF-D333-AEC5-217BD98D9FC3" name="F15.C8_RFE_Status_Codes PK">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 23:33:09 UTC</createdTime>
+<ownerDesignName>relational</ownerDesignName>
+<engineerTo>
+<item key="65FCDE9A-BB00-16BD-9A34-B7431BEE05CE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D6627C32-40B6-96CC-857F-A653F74537B6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

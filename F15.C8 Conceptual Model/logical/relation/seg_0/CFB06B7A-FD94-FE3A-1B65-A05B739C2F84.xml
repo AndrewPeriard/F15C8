@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Reviewer" directorySegmentName="seg_0" id="CFB06B7A-FD94-FE3A-1B65-A05B739C2F84">
+<createdBy>kissesfrme_20</createdBy>
+<createdTime>2015-10-21 21:32:26 UTC</createdTime>
+<ownerDesignName>F15.C8 Conceptual Model</ownerDesignName>
+<engineerTo>
+<item key="EC7CB5A6-57E7-E0BE-6C5E-48C0419974DA" value="true"/>
+</engineerTo>
+<sourcePk>43961D31-85C4-ED34-B897-EF644FB8158E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>399100C3-0432-0CF1-E47F-517FB60CBAAB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2FA5FBD2-13C2-E6AE-902B-A626EC8E5428</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
