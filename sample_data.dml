@@ -1,0 +1,143 @@
+truncate table F15C8_RFE;
+truncate table F15C8_Approver;
+truncate table F15C8_Auth;
+truncate table F15C8_Comment;
+truncate table F15C8_Contact;
+truncate table F15C8_Document;
+truncate table F15C8_Emp;
+truncate table F15C8_Lab;
+truncate table F15C8_Reviewer;
+truncate table F15C8_Status;
+truncate table F15C8_Task;
+
+alter trigger F15C8_Approver_PK_trig disable;
+alter trigger F15C8_Auth_PK_trig disable;
+alter trigger F15C8_Comment_PK_trig disable;
+alter trigger F15C8_Contact_PK_trig disable;
+alter trigger F15C8_Document_PK_trig disable;
+alter trigger F15C8_Emp_PK_trig disable;
+alter trigger F15C8_Lab_PK_trig disable;
+alter trigger F15C8_Reviewer_PK_trig disable;
+alter trigger F15C8_Task_PK_trig disable;
+
+insert into F15C8_Lab(lab_id, lab_name) values(1, 'Lab1');
+insert into F15C8_Lab(lab_id, lab_name) values(2, 'Lab2');
+
+insert into F15C8_Emp(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (1, 'A', 'Emp1oyee1', 'employee1@gmail.com', 'officename1', '1111111', 16-Nov-15, 100, 1);
+insert into F15C8_Emp(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (2, 'A', 'Emp1oyee2', 'employee2@gmail.com', 'officename1', '1112222', 16-Nov-15, 100, 1);
+insert into F15C8_Emp(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (5, 'A', 'Emp1oyee3', 'employee3@gmail.com', 'officename1', '1111133', 16-Nov-15, 100, 1);
+insert into F15C8_Emp(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (10, 'A', 'Emp1oyee4', 'employee4@gmail.com', 'officename1', '1111144', 16-Nov-15, 100, 2);
+insert into F15C8_Emp(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (17, 'A', 'Emp1oyee5', 'employee5@gmail.com', 'officename1', '1115511', 16-Nov-15, 100, 2);
+insert into F15C8_Emp(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (19, 'A', 'Emp1oyee6', 'employee6@gmail.com', 'officename1', '6611111', 16-Nov-15, 100, 2);
+
+insert into F15C8_Chairperson_View(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (30, 'A', 'Emp1oyee7Chair', 'Chair@gmail.com', 'officename1', '6619911', 05-Nov-15, 122, 1);
+insert into F15C8_Exec_Director_View(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (31, 'A', 'Emp1oyee8ExecDir', 'Dir@gmail.com', 'officename1', '6621111', 06-Nov-15, 140, 1);
+
+insert into F15C8_Lab_Director_View(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (33, 'A', 'Emp1oyee9LabDir1', 'LabDir1@gmail.com', 'officename1', '6611211', 16-Nov-15, 121, 1);
+insert into F15C8_Lab_Sys_Admin_View(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (34, 'A', 'Emp1oyee10SysAdmin1', 'Sys1@gmail.com', 'officename1', '6614411', 16-Nov-15, 120, 1);
+
+insert into F15C8_Lab_Director_View(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (35, 'A', 'Emp1oyee11LabDir2', 'LabDir2@gmail.com', 'officename1', '6611231', 16-Nov-15, 121, 2);
+insert into F15C8_Lab_Sys_Admin_View(emp_id, emp_status, emp_name, emp_email, emp_office, emp_phone, status_eff_date, F15C8_RFE_RTCODE_RFE_RTC_ID, F15C8_LAB_LAB_ID) 
+	values (36, 'A', 'Emp1oyee12SysAdmin2', 'Sys2@gmail.com', 'officename1', '6611412', 16-Nov-15, 120, 2);
+
+insert into F15C8_RFE(rfe_id, explanation, alt_protections, approval_review_date, F15C8_EMP_EMP_ID) 
+	values (7, 'Here is an explanation for an RFE for lab1', 'These are the alt protections for the RFE', 26-Nov-15, 1);
+insert into F15C8_RFE(rfe_id, explanation, alt_protections, approval_review_date, F15C8_EMP_EMP_ID) 
+	values (9, 'Here is an explanation for another RFE, which is for lab2', 'These are the alt protections for the RFE', 26-Nov-15, 2);
+
+insert into F15C8_Status(status_id, status_eff_date, F15C8_RFE_SC_RFE_STATUS, F15C8_RFE_RFE_ID)
+	values (1, sysdate, 'Entered', 7);
+insert into F15C8_Status(status_id, status_eff_date, F15C8_RFE_SC_RFE_STATUS, F15C8_RFE_RFE_ID)
+	values (2, sysdate, 'Entered', 9);
+
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (11, 1, 7);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (12, 30, 7);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (13, 31, 7);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (14, 33, 7);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (15, 34, 7);
+
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (16, 10, 9);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (17, 30, 9);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (18, 31, 9);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (19, 35, 9);
+insert into F15C8_Approver(approver_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (20, 36, 9);
+
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (1, sysdate, 'this is the comment on rfe 1 by Employee1', 1, 7);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (2, sysdate, 'this is the comment on rfe 1 by Emp1oyee8ExecDir', 31, 7);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (3, sysdate, 'this is the comment on rfe 1 by Emp1oyee7Chair', 30, 7);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (4, sysdate, 'this is the comment on rfe 1 by Emp1oyee10SysAdmin1', 34, 7);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (5, sysdate, 'this is the comment on rfe 2 by Employee2', 10, 9);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (6, sysdate, 'this is the comment on rfe 2 by Emp1oyee8ExecDir', 31, 9);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (7, sysdate, 'this is the comment on rfe 2 by Emp1oyee7Chair', 30, 9);
+insert into F15C8_Comment(comment_id, comment_entry_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (8, sysdate, 'this is the comment on rfe 2 by Emp1oyee12SysAdmin2', 36, 9);
+
+insert into F15C8_Contact(contact_id, effective_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (1, sysdate, 'comments', 5, 7);
+insert into F15C8_Contact(contact_id, effective_date, comments, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (1, sysdate, 'comments', 17, 9);
+
+insert into F15C8_Document(doc_id, F15C8_RFE_RFE_ID, doc_name)
+	values (1, 7, 'doc1');
+insert into F15C8_Document(doc_id, F15C8_RFE_RFE_ID, doc_name)
+	values (2, 7, 'doc2');
+insert into F15C8_Document(doc_id, F15C8_RFE_RFE_ID, doc_name)
+	values (3, 9, 'doc3');
+insert into F15C8_Document(doc_id, F15C8_RFE_RFE_ID, doc_name)
+	values (4, 9, 'doc4');
+
+insert into F15C8_Task(task_id, effective_date, task_abbreviation, task_description, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (1, sysdate, 'task1', 1, 7);
+insert into F15C8_Task(task_id, effective_date, task_abbreviation, task_description, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (2, sysdate, 'task2', 30, 7);
+insert into F15C8_Task(task_id, effective_date, task_abbreviation, task_description, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (3, sysdate, 'task3', 35, 7);
+insert into F15C8_Task(task_id, effective_date, task_abbreviation, task_description, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (4, sysdate, 'task4', 10, 9);
+insert into F15C8_Task(task_id, effective_date, task_abbreviation, task_description, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (5, sysdate, 'task5', 31, 9);
+insert into F15C8_Task(task_id, effective_date, task_abbreviation, task_description, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (6, sysdate, 'task6', 36, 9);
+
+insert into F15C8_Reviewer(reviewer_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (1, 5, 7);
+insert into F15C8_Reviewer(reviewer_id, F15C8_EMP_EMP_ID, F15C8_RFE_RFE_ID)
+	values (2, 19, 9);
+
+alter trigger F15C8_Approver_PK_trig enable;
+alter trigger F15C8_Auth_PK_trig enable;
+alter trigger F15C8_Comment_PK_trig enable;
+alter trigger F15C8_Contact_PK_trig enable;
+alter trigger F15C8_Document_PK_trig enable;
+alter trigger F15C8_Emp_PK_trig enable;
+alter trigger F15C8_Lab_PK_trig enable;
+alter trigger F15C8_Reviewer_PK_trig enable;
+alter trigger F15C8_Task_PK_trig enable;
